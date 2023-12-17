@@ -1,0 +1,15 @@
+/*
+ * <bexpr> ::= <expr> ;
+ * <expr> ::=  <term> <ttail>
+ * <ttail> ::=  <add_sub_tok> <term> <ttail> | e
+ * <term> ::=  <stmt> <stail>
+ * <stail> ::=  <mult_div_tok> <stmt> <stail> | e
+ * <stmt> ::=  <factor> <ftail>
+ * <ftail> ::=  <compare_tok> <factor> <ftail> | e
+ * <factor> ::=  <expp> ^ <factor> | <expp>
+ * <expp> ::=  ( <expr> ) | <num>
+ * <add_sub_tok> ::=  + | -
+ * <mul_div_tok> ::=  * | /
+ * <compare_tok> ::=  < | > | <= | >= | != | ==
+ * <num> ::=  {0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9}+
+ */
